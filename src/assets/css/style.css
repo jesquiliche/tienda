@@ -1,0 +1,155 @@
+#silverfox {
+/* Asignamos una altura mínima */
+  
+   background-size: cover;
+  background-position: center;
+}
+
+img {
+    height: 150px;
+    width: 100%;
+    min-height: 150px;
+    
+
+}
+.foto {
+  height: 70px;
+  width: 110%;
+  min-height: 70px;
+  
+
+}
+
+.table-hover  .table-hover tbody tr:hover td {
+  background-color: aqua;
+}
+
+.card-title {
+  text-align: center;
+}
+.picture {
+  margin-top: 12px;
+  height: 270px;
+  width: 100%;
+  min-height: 270px;
+
+}
+.zoom:hover {
+  transform: scale(4);
+}  
+
+.zoom {
+  transition: 0.5s;
+  
+}
+
+.articulos {
+  padding-top: 260px;
+}
+  
+  
+  
+  h1{
+    -webkit-text-stroke: 1px black;
+    text-shadow: 4px 4px rgb(189, 186, 186);
+  }
+  h2{
+    -webkit-text-stroke: 1px rgb(3, 3, 3);
+    text-shadow: 4px 4px rgb(189, 186, 186);
+    font-style: italic;
+  }
+  h5{
+    -webkit-text-stroke: 2px #fc2a3c;
+    text-shadow: 3px 3px rgb(189, 186, 186);
+    font-style: italic;
+    color:red;
+
+  }
+  h4{
+    -webkit-text-stroke: 2px #fc2a3c;
+    text-shadow: 3px 3px rgb(189, 186, 186);
+    font-style: italic;
+    color:red;
+
+  }
+  h3.especial {
+    -webkit-text-stroke: whitesmoke;
+  
+    font-size: 1.5rem;
+    font-style: italic;
+    color:whitesmoke;
+
+  }
+  h4.especial {
+    -webkit-text-stroke:2px black;
+  
+    font-size: 1.5rem;
+    font-style: italic;
+    
+    
+    color:black;
+
+  }
+
+  th {
+    
+  
+    font-size: 1rem;
+    
+    text-align: center;
+    
+    
+    color:black;
+
+  }
+
+  td {
+    
+  
+    font-size: 1rem;
+    
+    
+    
+    
+    color:black;
+
+  }
+
+
+
+  h5.especial {
+    -webkit-text-stroke:2px black;
+  
+    font-size: 1.5rem;
+    font-style: italic;
+    
+    
+    color:black;
+
+  }
+
+  
+  .Izquierda{
+    float: left;
+  }
+
+
+  #silverfox {
+    
+    background-image: url('../img/tienda.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+    .item img {
+    height: 100%;
+  
+    min-height: 50px;
+  }
+
+  .targeta {
+    margin-top:40px;
+    
+    
+  
+  }
+  
