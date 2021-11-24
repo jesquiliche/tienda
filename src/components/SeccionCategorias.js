@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import CardCategoria from './CardCategoria'
+import style from '../assets/css/style.css'
 
 const SeccionCategorias = () => {
 
@@ -20,22 +21,20 @@ const SeccionCategorias = () => {
 
     return (
         <div className="container">
-            <div className="row">
+            <div className="container mb-2" className="SeccionCat">
+                <div className="row">
             
-                {
-                    categorias.map(item=>(
-                        <CardCategoria 
-                            title={item.NOMBRE} 
-                        
-                            img={process.env.PUBLIC_URL + item.FOTO}/>
+                    {
+                        categorias.map(item=>(
+                            <CardCategoria 
+                                title={item.NOMBRE} 
+                        img={process.env.PUBLIC_URL + item.FOTO}/>
                     
-                    ))
-                }
-            
+                        ))
+                    }
+                </div>
             </div>
-           
-            
-        </div>
+        </div>  
     )
 }
 

@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react'
 import GridArticulos from './GridArticulos'
 import { useForm } from 'react-hook-form'
+import Menu from './Menu'
+import Cabecera from './Cabecera'
 
 
 const FormArticulo = () => {
@@ -192,7 +194,9 @@ const FormArticulo = () => {
 
 
     return (
-
+        <>
+        <Cabecera/>
+        <Menu/>
         <div className="Container py-14 articulos">
             
             <div className="container card  shadow-lg rounded col-sm-12 py-3">
@@ -447,6 +451,7 @@ const FormArticulo = () => {
                 
                           </div>
         </div>
+        </>
     )
 }
 

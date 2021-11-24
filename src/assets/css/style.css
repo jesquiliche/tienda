@@ -44,7 +44,13 @@ img {
 }
 
 .articulos {
-  padding-top: 260px;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+
+.SeccionCat {
+  padding-top: 160px;
+  margin-bottom: 20px;
 }
   
   
