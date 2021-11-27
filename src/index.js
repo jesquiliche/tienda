@@ -3,10 +3,37 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  NavLink
+} from "react-router-dom";
+import Home from './components/Home'
+
+import FormArticulo from './components/FormArticulo'
+
+import GridArticulos from './components/GridArticulos';
+import ListaArticulos from './components/ListaArticulos';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <Router>
+      
+        
+      <Routes>
+        <Route path="/" exact element={<Home/>}/>
+        <Route path="/articulos" exact element={<GridArticulos/>}/>
+        <Route path="/articulo" exact element={<FormArticulo/>}/>
+        <Route path="/articulosPorCategorias/:id" exact element={<ListaArticulos/>}/>
+      </Routes>
+      
+    
+    
+    </Router>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );

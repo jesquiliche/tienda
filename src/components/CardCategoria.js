@@ -22,7 +22,7 @@ class CardCategoria extends React.Component {
                                 <img src={this.props.img}/>        
                             </div>
                             
-                            <a href="#" className="btn btn-danger">Ofertas</a>
+                            <a href="#" className="btn btn-danger">Ver</a>
                           
                         </div>
                     </div>

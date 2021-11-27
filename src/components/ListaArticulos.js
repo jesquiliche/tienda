@@ -1,8 +1,13 @@
 import React from 'react'
 import Articulo from './Articulo'
+import { useParams } from "react-router";
 import { useEffect,useState } from 'react'
 
 const ListaArticulos = () => {
+
+    let params = useParams();
+    console.log(params.id)
+    
     const [articulos,setArticulos]=useState([])
 
     useEffect(() => {
@@ -11,7 +16,8 @@ const ListaArticulos = () => {
     }, [])
 
     const obtenerDatos=async ()=>{
-        const datos=await fetch('http://localhost:3001/articulos')
+        
+        const datos=await fetch('http://localhost:3001/articulosPorCategoria/'+params.id)
         const art=await datos.json()
         setArticulos(art)
         console.log(articulos)
@@ -21,7 +27,7 @@ const ListaArticulos = () => {
         <div>
             <div className="container">
         
-            
+                <h1>Entro</h1>
                 {
                     articulos.map(item=>(
                         <Articulo 
