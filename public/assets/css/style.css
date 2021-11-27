@@ -18,7 +18,7 @@ img {
 }
 
 img.zoom {
-  width: 150px;
+  width: 130px;
   height: 200px;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
