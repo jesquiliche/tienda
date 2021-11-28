@@ -20,7 +20,7 @@ const Ofertas = () => {
     }
     return (
         <div className="container SeccionCat">
-            <h1 className="text-center">Ofertas</h1>
+            <h2 className="text-center">Ofertas</h2>
             <div className="row col-sm-12">
 
             {

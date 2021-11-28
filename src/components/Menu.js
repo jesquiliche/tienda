@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/style.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import {Dropdown} from 'react-bootstrap';
 import Ofertas from './Ofertas';
 
 
@@ -16,10 +17,30 @@ const Menu = () => {
         
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav">
-      <a className="nav-item nav-link active" href="/">Inicio</a>
-      <a className="nav-item nav-link" href="/ofertas">Ofertas</a>
-      <a className="nav-item nav-link" href="/categorias">Categorias</a>
-      <a className="nav-item nav-link disabled" href="#">Contacto</a>
+    <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/">
+                  Inicio
+      </NavLink>
+      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/ofertas">
+                  Ofertas
+      </NavLink>
+      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/categorias">
+                  Categorias
+      </NavLink>
+      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/articulos">
+                  Artículos
+      </NavLink>
+      <Dropdown>
+  <Dropdown.Toggle variant="success" id="dropdown-basic" className="btn btn-outline-primary mx-1 btn-sm">
+    Articulos
+  </Dropdown.Toggle>
+      
+      <Dropdown.Menu>
+        <Dropdown.Item href="articulos">Mantenimineto</Dropdown.Item>
+        <Dropdown.Item href="articulo">Alta</Dropdown.Item>
+        
+    </Dropdown.Menu>
+</Dropdown>
+      
     </div>
   </div>
 </nav>

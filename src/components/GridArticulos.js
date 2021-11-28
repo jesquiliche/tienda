@@ -84,9 +84,9 @@ const GridArticulos = (props) => {
 
     return (
         <>
-            <div className="container card  shadow-lg rounded col-sm-12 my-3">
+            <div className="container card  shadow-lg rounded col-sm-12 SeccionCat">
                 
-            <table class="table table-hover">
+            <table className="table table-hover py-2">
                 <thead>
                     <tr>
                     <th scope="col">#</th>

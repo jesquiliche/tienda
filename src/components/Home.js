@@ -30,7 +30,7 @@ import FormArticulo from '../components/FormArticulo'
 const Home = () => {
   return (
     <>
-    
+      <Ofertas/>
       <SeccionCategorias/>
       
       

@@ -7,8 +7,8 @@ const Oferta = (props) => {
         
 
         
-        <div className="container card  shadow-lg rounded col-sm-6">
-            <div className="card-body item">
+        <div className="container card  shadow-lg rounded col-sm-5 mb-3 md-1">
+            <div className="card-body item -2">
                  
                 <table >
                     <tr>

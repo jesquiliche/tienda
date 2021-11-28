@@ -195,61 +195,16 @@ const FormArticulo = () => {
 
     return (
         <>
-        <Cabecera/>
-        <Menu/>
         <div className="Container py-14 articulos">
             
             <div className="container card  shadow-lg rounded col-sm-12 py-3">
             
                 
-            <GridArticulos row={fila} pag={pagina} actualizar={actualizar} />
+            
             
             
   
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                    <a class="page-link" href="#" 
-                        tabindex="-1"
-                        onClick={()=>{
-                            if(fila>0)
-                                setFila(fila-5)
-                            else setFila(0)
-                                
-                            setPagina(pagina)
-                        
-                        }}>Previous</a>
-                    </li>
-                    <li class="page-item"><a class="page-link" href="#"
-                        onClick={()=>{
-                        setFila(5)
-                                           
-                    }}    
-                    >1</a></li>
-                    <li class="page-item"><a class="page-link" href="#"
-                        onClick={()=>{
-                        setFila(10)
-                                           
-                    }}  
-                    >2</a></li>
-                    <li class="page-item"><a class="page-link" href="#"
-                        onClick={()=>{
-                        setFila(15)
-                                           
-                    }}  
-                    >3</a></li>
-                    <li class="page-item">
-                    <a class="page-link" href="#" 
-                        onClick={()=>{
-                            setFila(fila+5)
-                            
-                            setPagina(pagina)
-                        
-                        }}>Next</a>
-                    </li>
-                </ul>
-            </nav>
-
+          
                 <div className="card-title">
                     <h4>
                         Ficha Artículo
@@ -448,7 +403,51 @@ const FormArticulo = () => {
                     onClick={()=>setActualizar(!actualizar)}>Enviar</button>
                         
                 </form>
-                
+                <GridArticulos row={fila} pag={pagina} actualizar={actualizar} />
+                <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                    <a class="page-link" href="#" 
+                        tabindex="-1"
+                        onClick={()=>{
+                            if(fila>0)
+                                setFila(fila-5)
+                            else setFila(0)
+                                
+                            setPagina(pagina)
+                        
+                        }}>Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#"
+                        onClick={()=>{
+                        setFila(5)
+                                           
+                    }}    
+                    >1</a></li>
+                    <li class="page-item"><a class="page-link" href="#"
+                        onClick={()=>{
+                        setFila(10)
+                                           
+                    }}  
+                    >2</a></li>
+                    <li class="page-item"><a class="page-link" href="#"
+                        onClick={()=>{
+                        setFila(15)
+                                           
+                    }}  
+                    >3</a></li>
+                    <li class="page-item">
+                    <a class="page-link" href="#" 
+                        onClick={()=>{
+                            setFila(fila+5)
+                            
+                            setPagina(pagina)
+                        
+                        }}>Next</a>
+                    </li>
+                </ul>
+            </nav>
+
                           </div>
         </div>
         </>
