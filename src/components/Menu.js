@@ -10,40 +10,39 @@ import Ofertas from './Ofertas';
 const Menu = () => {
   return (
     <div className="container-fluid bg-dark">
+      
        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">JQE</a>
+      <a className="navbar-brand" href="#"> JQE</a>
          
         <span className="navbar-toggler-icon"></span>
         
   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div className="navbar-nav">
-    <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/">
+      <NavLink className="btn btn-light mx-1 btn-sm" to="/">
                   Inicio
       </NavLink>
-      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/ofertas">
+      <NavLink className="btn btn-light mx-1 btn-sm" to="/ofertas">
                   Ofertas
       </NavLink>
-      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/categorias">
+      <NavLink className="btn btn-light mx-1 btn-sm" to="/categorias">
                   Categorias
       </NavLink>
-      <NavLink className="btn btn-outline-primary mx-1 btn-sm" to="/articulos">
-                  Artículos
-      </NavLink>
       <Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic" className="btn btn-outline-primary mx-1 btn-sm">
-    Articulos
-  </Dropdown.Toggle>
-      
-      <Dropdown.Menu>
-        <Dropdown.Item href="articulos">Mantenimineto</Dropdown.Item>
-        <Dropdown.Item href="articulo">Alta</Dropdown.Item>
-        
-    </Dropdown.Menu>
-</Dropdown>
-      
+          <Dropdown.Toggle variant="" id="dropdown-basic" className="btn btn btn-danger mx-1 btn-sm">
+            Articulos
+          </Dropdown.Toggle>
+              
+              <Dropdown.Menu>
+                <Dropdown.Item href="articulos">Mantenimiento</Dropdown.Item>
+                <Dropdown.Item href="articulo">Alta</Dropdown.Item>
+                
+            </Dropdown.Menu>
+        </Dropdown>
+        </div>
     </div>
-  </div>
-</nav>
+    </nav>
+  
+
     </div>
      
   

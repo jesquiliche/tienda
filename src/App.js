@@ -11,8 +11,9 @@ const App = () => {
     
     <>
       <Cabecera />
-      <Menu />
-      <div className="container">
+      
+      
+      <div className="container-fluid">
           <Outlet />
 
       </div>

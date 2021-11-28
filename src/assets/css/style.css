@@ -1,9 +1,3 @@
-#silverfox {
-/* Asignamos una altura mínima */
-  
-  background-size: cover;
-  background-position: center;
-}
 
 img {
     height: 150px;
@@ -143,8 +137,7 @@ img {
   #silverfox {
     
     background-image: url('../img/tienda.jpg');
-    background-size: cover;
-    background-position: center;
+    min-height: 200px;
   }
     .item img {
     height: 100%;
