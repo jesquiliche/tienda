@@ -25,9 +25,8 @@ const ListaArticulos = () => {
     }
     return (
         <div>
-            <div className="container">
+            <div className="container SeccionCat">
         
-                <h1>Entro</h1>
                 {
                     articulos.map(item=>(
                         <Articulo 

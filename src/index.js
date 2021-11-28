@@ -16,6 +16,9 @@ import FormArticulo from './components/FormArticulo'
 
 import GridArticulos from './components/GridArticulos';
 import ListaArticulos from './components/ListaArticulos';
+import SeccionCategorias from './components/SeccionCategorias';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,10 +27,13 @@ ReactDOM.render(
       
         
       <Routes>
-        <Route path="/" exact element={<Home/>}/>
-        <Route path="/articulos" exact element={<GridArticulos/>}/>
-        <Route path="/articulo" exact element={<FormArticulo/>}/>
-        <Route path="/articulosPorCategorias/:id" exact element={<ListaArticulos/>}/>
+        <Route path="/" element={<App/>}>
+          
+        </Route>
+        <Route index="/Home" element={<SeccionCategorias/>}/>
+          <Route path="/articulos" element={<GridArticulos/>}/>
+          <Route path="/articulo" element={<FormArticulo/>}/>
+          <Route path="/articulosPorCategorias/:id" element={<ListaArticulos/>}/>
       </Routes>
       
     

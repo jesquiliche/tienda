@@ -21,14 +21,17 @@ const SeccionCategorias = () => {
 
     return (
         <div className="container">
-            <div className="container mb-2" className="SeccionCat">
+            <div className="container mb-2 SeccionCat">
                 <div className="row">
             
                     {
                         categorias.map(item=>(
                             <CardCategoria 
                                 title={item.NOMBRE} 
-                        img={process.env.PUBLIC_URL + item.FOTO}/>
+                                id={item.ID}
+                                img={process.env.PUBLIC_URL + item.FOTO}>
+                            </CardCategoria>
+                                
                     
                         ))
                     }

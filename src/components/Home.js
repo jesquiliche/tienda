@@ -26,17 +26,18 @@ import FormArticulo from '../components/FormArticulo'
 
 
 
-const App = () => {
+const Home = () => {
   return (
     <>
-      
-      <Cabecera />
-      <Menu />
       <SeccionCategorias/>
+      <h1>
+        Entro
+      </h1>
+      
       
     
     </>
   )
 }
 
-export default App
+export default Home

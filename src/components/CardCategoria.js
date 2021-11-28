@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/css/style.css';
 
 
@@ -21,8 +22,10 @@ class CardCategoria extends React.Component {
                             <div>
                                 <img src={this.props.img}/>        
                             </div>
-                            
-                            <a href="#" className="btn btn-danger">Ver</a>
+                            <Link to={`/articulosPorCategorias/${this.props.id}`}
+                                className="btn btn-danger">
+                                Ver
+                            </Link>
                           
                         </div>
                     </div>

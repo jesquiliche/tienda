@@ -7,7 +7,7 @@ const Articulo = (props) => {
         <div className="row py-2">
 
         
-        <div className="container card  shadow-lg rounded col-sm-9">
+        <div className="container card  shadow-lg rounded col-sm-10">
             <div className="card-body item">
                  
                 <table >
