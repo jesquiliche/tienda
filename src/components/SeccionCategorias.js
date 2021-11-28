@@ -22,6 +22,7 @@ const SeccionCategorias = () => {
     return (
         <div className="container">
             <div className="container mb-2 SeccionCat">
+                <h2 className="text-center">categorias</h2>
                 <div className="row">
             
                     {

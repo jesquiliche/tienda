@@ -10,30 +10,33 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
-import Home from './components/Home'
+import Ofertas from './components/Ofertas';
 
 import FormArticulo from './components/FormArticulo'
 
 import GridArticulos from './components/GridArticulos';
 import ListaArticulos from './components/ListaArticulos';
 import SeccionCategorias from './components/SeccionCategorias';
+import Home from './components/Home'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  
     <Router>
       
         
       <Routes>
-        <Route path="/" element={<App/>}>
-          
+        <Route path="/"  element={<App/>}>
+          <Route index="home" element={<Home/>}/>
+          <Route path="articulos" element={<GridArticulos/>}/>
+          <Route path="articulo" element={<FormArticulo/>}/>
+          <Route path="articulosPorCategorias/:id" element={<ListaArticulos/>}/>
+          <Route path="ofertas" element={<Ofertas/>}/>
+          <Route path="categorias" element={<SeccionCategorias/>}/>
         </Route>
-        <Route index="/Home" element={<SeccionCategorias/>}/>
-          <Route path="/articulos" element={<GridArticulos/>}/>
-          <Route path="/articulo" element={<FormArticulo/>}/>
-          <Route path="/articulosPorCategorias/:id" element={<ListaArticulos/>}/>
+        
       </Routes>
       
     

@@ -1,5 +1,7 @@
 import React from 'react';
 import '../assets/css/style.css';
+import { Link } from 'react-router-dom';
+import Ofertas from './Ofertas';
 
 
 
@@ -7,38 +9,20 @@ import '../assets/css/style.css';
 const Menu = () => {
   return (
     <div className="container-fluid bg-dark">
-      <div className="container">
-        <nav className="navbar navbar-expand-sm bg-dark navbar-dark">
+       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a className="navbar-brand" href="#">JQE</a>
+         
+        <span className="navbar-toggler-icon"></span>
         
-        <a className="navbar-brand" href="/home"><h3>JQE</h3></a>
-
-        
-            <ul className="navbar-nav navbar-white">
-          
-        
-            <li className="nav-item">
-              
-              <a className="nav-link" href="#">Ofertas</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Servicios</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">Personal Shopper</a>
-            </li>
-            <li className="nav-item">
-      
-                <a className="nav-link" href="/contacto">Contacto</a>
-            
-            </li>
-            <li className="nav navbar-nav navbar-right">
-              Texto de separacion  aaaaaaaa aaa   aaaa aa aaaaaaaaaaaaa  
-            </li>
-        </ul>
-        
-      
-        </nav>
-      </div>
+  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div className="navbar-nav">
+      <a className="nav-item nav-link active" href="/">Inicio</a>
+      <a className="nav-item nav-link" href="/ofertas">Ofertas</a>
+      <a className="nav-item nav-link" href="/categorias">Categorias</a>
+      <a className="nav-item nav-link disabled" href="#">Contacto</a>
+    </div>
+  </div>
+</nav>
     </div>
      
   

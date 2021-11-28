@@ -21,6 +21,7 @@ import consola from '../assets/img/consolas.webp';
 import electrodomestico from '../assets/img/electrodomesticos.webp';
 import television from '../assets/img/tv.webp';
 import SeccionCategorias from '../components/SeccionCategorias';
+import Ofertas from '../components/Ofertas';
 
 import FormArticulo from '../components/FormArticulo'
 
@@ -29,10 +30,9 @@ import FormArticulo from '../components/FormArticulo'
 const Home = () => {
   return (
     <>
+    
       <SeccionCategorias/>
-      <h1>
-        Entro
-      </h1>
+      
       
       
     
